@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/NetCoreSecurity/.vs/NetCoreSecurity/DesignTimeBuild
+/NetCoreSecurity/.vs/NetCoreSecurity/FileContentIndex
+/NetCoreSecurity/.vs/NetCoreSecurity/v17
+/NetCoreSecurity/.vs/NetCoreSecurity/config
+/NetCoreSecurity/bin/Debug/net9.0
+/NetCoreSecurity/obj
