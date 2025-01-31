@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NetCoreSecurity.Models.DataServices;
 
@@ -6,7 +8,21 @@ builder.Services.AddDbContext<StudentDataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("NetCoreSecurityContext"));
 });
-// Add services to the container.
+
+
+builder.Services.AddDbContext<IdentityDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("NetCoreSecurityContext"), optionbuilder =>
+    {
+        optionbuilder.MigrationsAssembly("NetCoreSecurity");
+    });
+});
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<IdentityDbContext>()
+    .AddDefaultTokenProviders();
+
+
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
