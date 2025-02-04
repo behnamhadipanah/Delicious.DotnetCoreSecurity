@@ -1,0 +1,9 @@
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.csproj.AssemblyReference.cache
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.AssemblyInfoInputs.cache
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.AssemblyInfo.cs
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.csproj.CoreCompileInputs.cache
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.RazorAssemblyInfo.cache
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.RazorAssemblyInfo.cs
+C:\Git\Delicious.DotnetCoreSecurity\NetCoreSecurity.WebClient\obj\Debug\net9.0\NetCoreSecurity.WebClient.sourcelink.json
