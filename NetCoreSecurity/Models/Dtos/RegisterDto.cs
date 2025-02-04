@@ -20,5 +20,9 @@ namespace NetCoreSecurity.Models.Dtos
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+
+        [Display(Name = "Faculty Number")]
+        public string FacultyNumber { get; set; }
+
     }
 }

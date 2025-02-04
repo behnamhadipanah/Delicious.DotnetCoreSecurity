@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\NetCoreSecurity.TokenService\\NetCoreSecurity.TokenService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\NetCoreSecurity.WebClient\\NetCoreSecurity.WebClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

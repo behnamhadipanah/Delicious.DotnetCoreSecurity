@@ -25,6 +25,14 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddAuthorization(option =>
+{
+    option.AddPolicy("FacultyOnly",
+        policy => policy.RequireClaim("FacultyNumber"));
+
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

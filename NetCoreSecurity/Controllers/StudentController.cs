@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NetCoreSecurity.Models.DataServices;
 using NetCoreSecurity.Models.Student;
 
 namespace NetCoreSecurity.Controllers
 {
+    [Authorize]
     public class StudentController : Controller
     {
         private readonly StudentDataContext _context;
@@ -15,15 +17,19 @@ namespace NetCoreSecurity.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(new List<CourseGrade>());
+            string username = User.Identity.Name;
+            IEnumerable<CourseGrade> grades= _context.Grades.Where(g=>g.StudentUsername==username);
+            return View(grades);
         }
         [HttpGet]
+        [Authorize(Policy = "FacultyOnly")]
         public IActionResult AddGrade()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize(Policy ="FacultyOnly")]
         public IActionResult AddGrade(CourseGrade model)
         {
             if (!ModelState.IsValid)
@@ -36,7 +42,9 @@ namespace NetCoreSecurity.Controllers
 
             return RedirectToAction(nameof(StudentController.Index), "Student");
         }
+
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Classifications()
         {
             var classifications = new List<string>()

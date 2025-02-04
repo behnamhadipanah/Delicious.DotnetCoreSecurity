@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreSecurity.Models.Dtos;
+using System.Security.Claims;
 
 namespace NetCoreSecurity.Controllers
 {
@@ -33,11 +34,32 @@ namespace NetCoreSecurity.Controllers
                     Email = register.Email,
                     UserName = register.Email,
                 };
-                var result = await _userManager.CreateAsync(user,register.Password);
+
+                if (!string.IsNullOrEmpty(register.FacultyNumber))
+                {
+                    IdentityUserClaim<string> userClaim = new IdentityUserClaim<string>()
+                    {
+
+                        ClaimType = "FacultyNumber",
+                        ClaimValue = register.FacultyNumber
+
+                    };
+
+                }
+
+
+                var result = await _userManager.CreateAsync(user, register.Password);
 
                 if (result.Succeeded)
-                    return RedirectToAction("login", "account");
+                {
 
+                    if (!string.IsNullOrEmpty(register.FacultyNumber))
+                    {
+                        await _userManager.AddClaimAsync(user, new Claim("FacultyNumber", register.FacultyNumber));
+
+                    }
+                    return RedirectToAction("login", "account");
+                }
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
@@ -48,7 +70,7 @@ namespace NetCoreSecurity.Controllers
         }
 
         #endregion
-        
+
         #region login
         [HttpGet]
         public IActionResult Login()
@@ -57,12 +79,12 @@ namespace NetCoreSecurity.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginDto login,string returnUrl=null)
+        public async Task<IActionResult> Login(LoginDto login, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var result=await _signInManager.PasswordSignInAsync(login.Email, login.Password, login.RememberMe, false);
+                var result = await _signInManager.PasswordSignInAsync(login.Email, login.Password, login.RememberMe, false);
                 if (result.Succeeded)
                 {
                     if (Url.IsLocalUrl(returnUrl))
@@ -79,12 +101,22 @@ namespace NetCoreSecurity.Controllers
         }
         #endregion
 
+        #region Logout
 
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
+
+        #endregion
+
+
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }
