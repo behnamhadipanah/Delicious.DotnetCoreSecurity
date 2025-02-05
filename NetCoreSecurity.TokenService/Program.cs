@@ -1,4 +1,5 @@
 
+using Duende.IdentityServer;
 using Duende.IdentityServer.Test;
 using IdentityServerHost.Quickstart.UI;
 using NetCoreSecurity.TokenService;
@@ -11,10 +12,16 @@ builder.Services.AddIdentityServer()
     .AddInMemoryIdentityResources(Config.GetIdentityResources())
     .AddInMemoryClients(Config.GetClients())
     .AddTestUsers(TestUsers.Users);
-    //.AddInMemoryApiResources(Config.GetIdentityResources());
-    //.AddClientStore<InMemoryClientStore>()
-    
+//.AddInMemoryApiResources(Config.GetIdentityResources());
+//.AddClientStore<InMemoryClientStore>()
 
+
+builder.Services.AddAuthentication().AddGoogle(options =>
+{
+    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+    options.ClientId = "";//from console.developer.google.com
+    options.ClientSecret = ""; //from console.developer.google.com
+});
 builder.Services.AddMvc();
 builder.Services.AddControllersWithViews();
 

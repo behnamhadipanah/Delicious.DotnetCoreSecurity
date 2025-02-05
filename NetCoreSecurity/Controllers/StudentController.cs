@@ -22,14 +22,14 @@ namespace NetCoreSecurity.Controllers
             return View(grades);
         }
         [HttpGet]
-        [Authorize(Policy = "FacultyOnly")]
+        //[Authorize(Policy = "FacultyOnly")]
         public IActionResult AddGrade()
         {
             return View();
         }
 
         [HttpPost]
-        [Authorize(Policy ="FacultyOnly")]
+        //[Authorize(Policy ="FacultyOnly")]
         public IActionResult AddGrade(CourseGrade model)
         {
             if (!ModelState.IsValid)
