@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetCoreSecurity.TokenService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f8966bf3bfc211341f92877e35cd52621cc26bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1416e0d162db5485fc7dbb66393ba9d0b53ceed8")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetCoreSecurity.TokenService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetCoreSecurity.TokenService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

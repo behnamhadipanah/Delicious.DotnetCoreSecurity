@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "mEkerBAQZo8=",
+  "dgSpecHash": "tNvNQmK0UHY=",
   "success": true,
   "projectFilePath": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\NetCoreSecurity.TokenService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\b.hadipanah\\.nuget\\packages\\duende.identitymodel\\7.0.0\\duende.identitymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\b.hadipanah\\.nuget\\packages\\duende.identityserver\\7.1.0\\duende.identityserver.7.1.0.nupkg.sha512",
     "C:\\Users\\b.hadipanah\\.nuget\\packages\\duende.identityserver.storage\\7.1.0\\duende.identityserver.storage.7.1.0.nupkg.sha512",
+    "C:\\Users\\b.hadipanah\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\9.0.1\\microsoft.aspnetcore.authentication.google.9.0.1.nupkg.sha512",
     "C:\\Users\\b.hadipanah\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\9.0.0\\microsoft.aspnetcore.authentication.openidconnect.9.0.0.nupkg.sha512",
     "C:\\Users\\b.hadipanah\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\9.0.0\\microsoft.aspnetcore.dataprotection.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\b.hadipanah\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
