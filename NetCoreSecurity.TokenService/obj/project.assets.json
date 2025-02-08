@@ -531,23 +531,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\b.hadipanah\\.nuget\\packages\\": {},
+    "C:\\Users\\Behnam\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\NetCoreSecurity.TokenService.csproj",
+      "projectUniqueName": "C:\\Github\\behnamhadipanah\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\NetCoreSecurity.TokenService.csproj",
       "projectName": "NetCoreSecurity.TokenService",
-      "projectPath": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\NetCoreSecurity.TokenService.csproj",
-      "packagesPath": "C:\\Users\\b.hadipanah\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\obj\\",
+      "projectPath": "C:\\Github\\behnamhadipanah\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\NetCoreSecurity.TokenService.csproj",
+      "packagesPath": "C:\\Users\\Behnam\\.nuget\\packages\\",
+      "outputPath": "C:\\Github\\behnamhadipanah\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.TokenService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\b.hadipanah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Behnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
