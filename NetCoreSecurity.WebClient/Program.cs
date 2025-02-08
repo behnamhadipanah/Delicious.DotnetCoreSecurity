@@ -5,6 +5,18 @@ using Microsoft.EntityFrameworkCore;
 using NetCoreSecurity.WebClient.Models.DataServices;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("MyCors",
+//        config =>
+//        config.WithOrigins("urlAddress")
+//        .WithMethods("GET")
+//        .AllowAnyHeader()
+//        );
+    
+//});
+
 builder.Services.AddDbContext<StudentDataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("NetCoreSecurityContext"));
@@ -64,7 +76,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
+//app.UseCors("MyCors");
 //app.UseAuthorization();
 app.UseAuthentication();
 

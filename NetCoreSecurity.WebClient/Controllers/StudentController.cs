@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreSecurity.WebClient.Models.DataServices;
 using NetCoreSecurity.WebClient.Models.Student;
@@ -6,6 +7,8 @@ using NetCoreSecurity.WebClient.Models.Student;
 namespace NetCoreSecurity.WebClient.Controllers
 {
     [Authorize]
+    [AutoValidateAntiforgeryToken]//xss valid
+    //[EnableCors("MyCors")]
     public class StudentController : Controller
     {
         private readonly StudentDataContext _context;
@@ -30,6 +33,7 @@ namespace NetCoreSecurity.WebClient.Controllers
 
         [HttpPost]
         [Authorize(Policy = "FacultyOnly")]
+        [ValidateAntiForgeryToken] //xss valid
         public IActionResult AddGrade(CourseGrade model)
         {
             if (!ModelState.IsValid)
