@@ -8453,26 +8453,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Behnam\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
+    "C:\\Users\\b.hadipanah\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\behnamhadipanah\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.WebClient\\NetCoreSecurity.WebClient.csproj",
+      "projectUniqueName": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.WebClient\\NetCoreSecurity.WebClient.csproj",
       "projectName": "NetCoreSecurity.WebClient",
-      "projectPath": "C:\\Github\\behnamhadipanah\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.WebClient\\NetCoreSecurity.WebClient.csproj",
-      "packagesPath": "C:\\Users\\Behnam\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\behnamhadipanah\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.WebClient\\obj\\",
+      "projectPath": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.WebClient\\NetCoreSecurity.WebClient.csproj",
+      "packagesPath": "C:\\Users\\b.hadipanah\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\Delicious.DotnetCoreSecurity\\NetCoreSecurity.WebClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Behnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Users\\b.hadipanah\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
