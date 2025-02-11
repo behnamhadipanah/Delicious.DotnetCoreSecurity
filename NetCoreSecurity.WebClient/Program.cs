@@ -55,6 +55,8 @@ builder.Services.AddAuthentication(options =>
     {
         options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
         options.Cookie.Name = "Cookie";
+        options.Cookie.HttpOnly=true;
+        options.Cookie.SecurePolicy= CookieSecurePolicy.Always;//just http request
     })
     .AddOpenIdConnect(option =>
     {

@@ -9,6 +9,7 @@ namespace NetCoreSecurity.WebClient.Controllers
     [Authorize]
     [AutoValidateAntiforgeryToken]//xss valid
     //[EnableCors("MyCors")]
+    [RequireHttps]
     public class StudentController : Controller
     {
         private readonly StudentDataContext _context;

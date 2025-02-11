@@ -1,14 +1,19 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.EntityFrameworkCore;
 using NetCoreSecurity.Models.DataServices;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 builder.Services.AddDbContext<StudentDataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("NetCoreSecurityContext"));
 });
 
+var passwd = builder.Configuration["PaymentPassword"];
 
 builder.Services.AddDbContext<IdentityDbContext>(options =>
 {
@@ -32,7 +37,10 @@ builder.Services.AddAuthorization(option =>
 
 });
 
-
+builder.Services.Configure<MvcOptions>(options =>
+{
+    options.Filters.Add(new RequireHttpsAttribute());
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,6 +54,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseRewriter(new RewriteOptions().AddRedirectToHttps());
+
 app.UseAuthorization();
 
 app.MapStaticAssets();
@@ -57,3 +67,6 @@ app.MapControllerRoute(
 
 
 app.Run();
+
+
+public partial class Program { }
