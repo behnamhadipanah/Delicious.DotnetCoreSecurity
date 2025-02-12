@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "AvT0GyK0LjlN6V9EJeC3euKttUFCMGyf/xyze919HJM=",
+  "Source": "SecurityApp.Api",
+  "BasePath": "_content/SecurityApp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

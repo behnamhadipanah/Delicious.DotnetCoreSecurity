@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetCoreSecurity.WebClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d6c5129a1201a716fa6a2ade94f2e50f463b05e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+667afc65828671ac8d1c970a50c0018430ca9f69")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetCoreSecurity.WebClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetCoreSecurity.WebClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
